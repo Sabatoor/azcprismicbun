@@ -1,6 +1,5 @@
 import { createClient } from '@/prismicio'
 import { cn } from '@/lib/utils/cn'
-import FooterLogo from './FooterLogo'
 import { PrismicRichText } from './PrismicRichText'
 import Heading from './Heading'
 import LogoAZC from './LogoAZC'
@@ -15,7 +14,7 @@ export default async function Footer() {
       )}
     >
       {/* <FooterLogo className="inline h-[70px] lg:h-[100px]" /> */}
-      <LogoAZC className="inline w-[70px] lg:w-[100px]" />
+      <LogoAZC theme="light" className="inline w-[70px] lg:w-[100px]" />
       <PrismicRichText
         field={settings.data.footer_slogan}
         components={{
