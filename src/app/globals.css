@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-primary: #003D5A;
+  --brand-secondary: #AB9B87;
+  --brand-neutral: #333;
+  --brand-base: #F5F5F5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-color-primary;
+}
