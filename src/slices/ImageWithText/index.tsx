@@ -30,13 +30,13 @@ const ImageWithText = ({ slice }: ImageWithTextProps): JSX.Element => {
         {isFilled.image(slice.primary.image) && (
           <PrismicNextImage
             field={slice.primary.image}
-            className={cn('my-6', {
-              'order-2': slice.primary.image_location === true,
+            className={cn('my-6 lg:order-none', {
+              'lg:order-2': slice.primary.image_location === true,
             })}
           />
         )}
         <div
-          className={cn('', {
+          className={cn('lg:order-none', {
             'order-1': slice.primary.image_location === true,
           })}
         >
