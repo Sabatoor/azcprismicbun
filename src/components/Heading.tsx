@@ -21,16 +21,13 @@ export default function Heading({
         'font-playfair font-bold text-center text-color-neutral',
         className,
         {
-          'text-5xl leading-[4rem] lg:text-7xl lg:leading-[6rem]':
-            size === '7xl',
-          'text-4xl leading-[3rem] lg:text-6xl lg:leading-[5rem]':
-            size === '6xl',
-          'text-3xl leading-[2rem] lg:text-5xl lg:leading-[4rem]':
-            size === '5xl',
-          'text-2xl lg:text-4xl lg:leading-[3rem]': size === '4xl',
-          'text-xl lg:text-3xl': size === '3xl',
-          'text-lg': size === '2xl',
-          'text-base': size === 'xl',
+          'text-3xl leading-snug lg:text-4xl lg:leading-normal': size === '7xl',
+          'text-2xl leading-snug lg:text-3xl lg:leading-normal': size === '6xl',
+          'text-xl leading-normal lg:text-2xl': size === '5xl',
+          'text-lg leading-normal lg:text-xl': size === '4xl',
+          'text-md leading-normal lg:text-lg': size === '3xl',
+          'text-sm leading-normal lg:text-md': size === '2xl',
+          'text-xs leading-normal lg:text-sm': size === 'xl',
         }
       )}
       {...restProps}
