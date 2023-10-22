@@ -31,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const settings = await client.getSingle('settings')
   return {
     metadataBase: new URL('https://zimeras.ca'),
-    title: prismic.asText(settings.data.site_title) || 'AZ Copywriting',
+    title: prismic.asText(settings.data.site_title) || 'AZ Copywriting Ltd',
     description:
       settings.data.site_meta_description ||
       `This site's dedicated to our relationship with technology and the profound impact it's had on our lives. I provide innovative services such as Prompt Engineering, Data-Driven Content Marketing, and Web Development. If you're interested in how cutting-edge technologies like openAI can enhance our lives, shape societies, and transform the way we communicate, then you are in the right place.`,
