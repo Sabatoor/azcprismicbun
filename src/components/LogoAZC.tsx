@@ -1,17 +1,20 @@
 import Image from 'next/image';
-// import azclogo from '../../public/azc_100x100.png'
-import azclogodark from '../../public/azc_100x100_dark.png'
+import azclogodark from '../../public/azc_100x100_dark.png';
+import azclogolight from '../../public/azc_100x100.png'; // Import the light logo
 
 type LogoAZCprops = {
-  className?: string
+  className?: string;
+  theme?: 'dark' | 'light'; // Add a theme prop
 }
 
-const LogoAZC = ({className}: LogoAZCprops) => {
+const LogoAZC = ({ className, theme = 'dark' }: LogoAZCprops) => {
+  const logoSrc = theme === 'light' ? azclogolight : azclogodark;
+  
   return (
     <Image
-      src={azclogodark} // Path to your image inside the 'public' directory
+      src={logoSrc} // Use the logoSrc based on the theme prop
       alt="AZ Copywriting Logo" 
-      height={50} // original size is 100x100
+      height={50}
       width={50}
       className={className}
     />
