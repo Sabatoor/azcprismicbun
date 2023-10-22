@@ -14,8 +14,8 @@ export default async function Page() {
     '@graph': [
       {
         '@type': 'Person',
-        '@id': 'https://zimeras.ca/',
-        name: 'Naz',
+        '@id': 'https://zimeras.ca/#azc',
+        name: 'Apostolos-Paul',
         description: settings.data.site_meta_description || '',
       },
     ],
